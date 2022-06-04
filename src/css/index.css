@@ -1,16 +1,19 @@
 body {
   font-family: "Poppins", sans-serif;
-  height: 100vh;
-  background: url(../images/bg-desktop.svg) repeat;
+  min-height: 100vh;
+  background: url(../images/bg-desktop.svg)center bottom  repeat;
   background-color: hsl(257, 40%, 49%);
-  background-size: cover;
+  background-size:cover;
   color: white;
   line-height: 1.5;
+  transition: 0.3s;
+  display: flex;
 }
 
 main {
   margin: 0 auto;
   width: 1024px;
+  display: block;
 }
 
 .logo {
