@@ -1,7 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
-  background: url(../images/bg-desktop.svg)center bottom  repeat;
+  background: url(../images/bg-desktop.svg)center center  repeat;
   background-color: hsl(257, 40%, 49%);
   background-size:cover;
   color: white;
@@ -43,10 +43,25 @@ section.main{
  }
 
  @media only screen and (max-width: 800px)  {
+  body{
+    height: 100%;
+  }
   main{
     margin: 0;
     
-    padding: 30px
+    padding: 0;
+  }
+
+  section.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .header img{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    width: 150px;
   }
   .central{
     display: flex;
@@ -55,31 +70,34 @@ section.main{
     align-items: center;
   }
   .central.image img{
-    width: 600px;
+    width: 300px;
   }
   
-  .letras {
-    padding: 10px;
+  .letras { 
+    padding-top:  10px;
+   
   }
 
   .letras h1{
-    font-size: 3rem;
+    font-size: 1.5rem;
     text-align: center;
+    font-weight: 700;
    }
 
 
-  section.main{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+ 
   .letras p{
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     line-height: 2;
     text-align: center;
-    font-size: 1.5rem
+    font-size: 1rem;
+    padding: 0 20px;
+    font-weight: 300;
   }
-
+  .letras button {
+    padding: 0.4rem 5rem;
+    margin-top: 40px;
+  }
 
 
  }
@@ -101,13 +119,13 @@ section.main{
  }
 
  .footer .roda i{
-  font-size: 2rem;
+  font-size: 1rem;
  
  }
  @media only screen and (max-width: 800px)  {
   .footer{
-    margin: 4rem 0;
-    width: 100%;
+    margin-top:  4rem;
+   
     justify-content: center;
   }
 
