@@ -1,125 +1,114 @@
 body {
   font-family: "Poppins", sans-serif;
-  min-height: 100vh;
+  height: 100vh;
   background: url(../images/bg-desktop.svg)center bottom  repeat;
   background-color: hsl(257, 40%, 49%);
   background-size:cover;
   color: white;
   line-height: 1.5;
   transition: 0.3s;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  
+}
+main{
+  margin: 0 10rem;
+}
+
+section.main{
   display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.central{
+  padding-top: 5rem;
+  width:  100%;
+}
+ 
+.letras p{
+  line-height: 2;
 }
 
-main {
-  margin: 0 auto;
-  width: 1024px;
-  display: block;
-}
+ .letras h1{
+  font-size: 4rem;
+ }
+ .letras button {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  padding: 1.4rem 5rem;
+  background-color: white ;
+  color: black;
+ }
 
-.logo {
-  width: 200px;
-}
+ @media only screen and (max-width: 800px)  {
+  main{
+    margin: 0;
+    
+    padding: 30px
+  }
+  .central{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .central.image img{
+    width: 600px;
+  }
+  
+  .letras {
+    padding: 10px;
+  }
 
-header {
-  padding: 61px 10px;
-}
+  .letras h1{
+    font-size: 3rem;
+    text-align: center;
+   }
 
-.img-body {
-  width: 400px;
-}
 
-.container {
+  section.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .letras p{
+    margin-top: 2rem;
+    line-height: 2;
+    text-align: center;
+    font-size: 1.5rem
+  }
+
+
+
+ }
+
+
+
+ .footer{
   display: flex;
   padding: 10px 10px;
-}
-
-.container .container-textos {
-  padding-left: 40px;
-}
-
-.container .container-textos h1 {
-  font-weight: 600;
-  padding: 20px 0;
-  display: block;
-  font-size: 2em;
-}
-
-.container .container-textos p {
-  font-weight: 400;
-}
-
-.container .container-textos button {
-  margin-top: 20px;
-  padding: 10px 40px;
-  border-radius: 45px;
-  border: none;
-  transition: 0.3s;
-  box-shadow: 1px 5px 0.9em black;
-}
-
-.container .container-textos button:hover {
-  box-shadow: 0 0 0.4em black;
-}
-
-footer {
-  display: flex;
   justify-content: flex-end;
-}
+ }
 
-footer i {
-  padding: 10px;
-}
+ .footer .roda{
+  border-radius: 100%;
+  border:solid 1px ;
+  align-self:flex-end;
+  margin-left: 20px;
+  padding: 0.8rem 0.8rem;
+ }
 
-@media (max-width: 575px) {
-  body {
-    height: 100%;
-
-    background: url(../images/bg-mobile.svg);
-    background-color: hsl(257, 40%, 49%);
-  }
-
-  main {
+ .footer .roda i{
+  font-size: 2rem;
+ 
+ }
+ @media only screen and (max-width: 800px)  {
+  .footer{
+    margin: 4rem 0;
     width: 100%;
-    height: 100vh;
-  }
-
-  header {
-    padding: 30px 10px;
-  }
-
-  .logo {
-    width: 200px;
-  }
-
-  .img-body {
-    width: 100%;
-  }
-
-  .container {
-    flex-direction: column;
-    padding: 10px 20px;
-  }
-
-  .container .container-textos {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 30px 0;
-    align-items: center;
-    text-align: center;
-  }
-
-  .container .container-textos button {
-    margin-top: 50px;
-    padding: 15px 87px;
-  }
-
-  footer {
-    display: flex;
     justify-content: center;
   }
 
-  footer i {
-    padding: 40px 20px;
-  }
-}
+ }
